@@ -48,7 +48,7 @@ namespace Picea.Rubens;
 /// </summary>
 /// <remarks>
 /// Two states: <see cref="Awaiting"/> (waiting for a reply) and
-/// <see cref="Received{T}"/> (reply received — terminal).
+/// <see cref="ReplyState{T}.Received"/> (reply received — terminal).
 /// </remarks>
 public interface ReplyState<T>
 {
