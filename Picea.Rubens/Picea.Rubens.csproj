@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <!-- NuGet package metadata -->
+  <PropertyGroup>
+    <PackageId>Picea.Rubens</PackageId>
+    <Title>Picea.Rubens</Title>
+    <Description>Actor model (Hewitt 1973) built on the Picea kernel — typed mailbox actors with unforgeable address capabilities, one-shot reply actors, envelope-based request-reply. All actors are Deciders: they validate commands against state, produce events, and evolve via transitions.</Description>
+    <Authors>Maurice Peters</Authors>
+    <PackageTags>actor-model;actors;mailbox;hewitt;decider;state-machine;automaton;functional;picea</PackageTags>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/Picea/Rubens</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://github.com/Picea/Rubens</PackageProjectUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Picea" Version="1.0.*-*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="Picea.Rubens.Tests" />
+  </ItemGroup>
+
+</Project>
